@@ -14,14 +14,14 @@ gulp.task("build", function() {
 		
 	gulp.src("src/server.js")
 		.pipe(uglify({ mangle: false }))
-		.pipe(gulp.dest("dist/"))
+		.pipe(gulp.dest("dist/"));
 		
 	gulp.src("src/public/js/**.js")
 		.pipe(uglify({ mangle: false }))
-		.pipe(gulp.dest("dist/public/js/"))
+		.pipe(gulp.dest("dist/public/js/"));
 		
 	gulp.src("src/public/less/**.less")
 		.pipe(less())
 		.pipe(minCSS())
-		.pipe(gulp.dest("dist/public/css/"))
+		.pipe(gulp.dest("dist/public/css/"));
 });
