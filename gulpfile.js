@@ -25,3 +25,21 @@ gulp.task("build", function() {
 		.pipe(minCSS())
 		.pipe(gulp.dest("dist/public/css/"));
 });
+
+gulp.task("connect", function () {
+	connect.server({
+		port: 80,
+		root: "dist/public",
+		livereload: true
+	});
+});
+
+gulp.task("reload", function () {
+	connect.reload();
+});
+
+gulp.task("default", ["build", "connect"], function () {
+	gulp.watch("src/public/index.jade", ["build", "reload"]);
+	gulp.watch("src/public/js/**.js", ["build", "reload"]);
+	gulp.watch("src/public/less/**.less", ["build", "reload"]);
+});
