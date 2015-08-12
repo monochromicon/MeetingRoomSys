@@ -1,24 +1,21 @@
 {
-	"name": "MeetingRoomCheckoutSys",
-	"version": "0.0.0",
-	"private": true,
-	"repository": {
-		"git": "https://github.com/monochromicon/MeetingRoomSys"
-	},
-	"dependencies": {
-		"rethinkdb": "*",
-		"express": "*",
-		"async": "*",
-		"body-parser": "*",
-		"morgan": "*"
-	},
-	"devDependencies": {
-		"gulp": "*",
-		"gulp-minify-css": "*",
-		"gulp-minify-html": "*",
-		"gulp-jade": "*",
-		"gulp-less": "*",
-		"gulp-uglify": "*",
-		"gulp-connect": "*"
-	}
+  "name": "MeetingRoomCheckoutSys",
+  "version": "0.0.0",
+  "private": true,
+  "repository": {
+    "git": "https://github.com/monochromicon/MeetingRoomSys"
+  },
+  "dependencies": {
+    "rethinkdb": "*",
+    "express": "*",
+    "async": "*",
+    "body-parser": "*",
+    "morgan": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-minify-css": "*",
+    "gulp-minify-html": "*",
+    "gulp-uglify": "*"
+  }
 }
